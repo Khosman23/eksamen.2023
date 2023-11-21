@@ -3,86 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <title>index.html</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="img/logo1.png" alt="logo">
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="about.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="grid-forside">
+        <header>
+            <a href="index.html"><img class="logo" src="img/logo1.png" alt="logo"></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <button type="button" class="yellow-btn"><a href="about.html">Contact</a></button>
+                </ul>
+            </nav>
+        </header>
         <main>
             <section>
-                <article>
+                <article class="video-text">
                     <h1>Compeling headline</h1>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    <button onclick="muFunction" id="myBtn">Read more about our services</button>
+                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non 
+                    provident</p>
+                    <button type="button" class="yellow-btn">Read more about our services</button>
                     <video autoplay muted loop id="video">
                         <source src="img/mountains.mp4" type="video/mp4">
-                    </video> 
+                    </video>
                 </article>
+            </section>
+            <section class="enganging">
                 <article>
                     <h1>Enganging subheading. What can you help your visitors with</h1>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
                         deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                 </article>
-
+            </section>  
+            <section class="company">      
                 <article>
                     <img src="https://placehold.co/400x400" alt="comp-bilde">
                     <h2>About Our Company</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                        <button onclick="muFunction" id="myBtn">Read more about us</button>
-                </article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    eu fugiat nulla pariatur. Excepteur </p>
+                    <button type="button" class="more-about-btn">Read more about us</button>
+                    </article>
             </section>
-            <section>
+            <section class="our-services">
                 <h1>Our Services</h1>
                 <article>
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-users fa-2x"></i>
                     <h3>Branding</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <i class="fa-solid fa-cloud-arrow-up fa-2x icon"></i>
                     <h3>Branding</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-light fa-left-right"></i>
+                    <i class="fa-solid fa-arrows-left-right fa-2x"></i>                    
                     <h3>Branding</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-wifi fa-2x"></i>
                     <h3>Branding</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
             </section>
-            <section>
+            <section class="newsletter">
                 <h1>Sign up for our newsletter</h1>
                 <article>
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Nora@epost.no" name="email">
-                    <button type="submit" class="sign-me-up-btn">Sign me up!</button>
+                    <label id="email"><b></b></label>
+                    <input class="searchbar" type="text" placeholder="Nora@epost.no" name="email">
+                    <button type="button" class="yellow-btn">Sign me up!</button>
                 </article>
             </section>
         </main>
         <footer>
-            <img src="img/logo1.png" alt="logo">
+            <img class="logo-footer" src="img/logo1.png" alt="logo">
             <p>Companyrights Companyname 2023</p>
-            <i class="fa-brands fa-facebook"></i> 
-            <i class="fa-brands fa-square-instagram"></i> 
-            <i class="fa-brands fa-linkedin"></i>
+            <article class="fa-brands">
+                <i class="fa-brands fa-square-facebook fa-2x"></i>
+                <i class="fa-brands fa-square-instagram fa-2x"></i> 
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </article>    
         </footer>
+    </div>
 </body>
 </html>

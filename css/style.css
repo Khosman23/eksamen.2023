@@ -1,0 +1,205 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-forside{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header, main, footer{
+    padding: 0.1rem;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 3%;
+    color: black;
+    
+}
+
+.nav_links{
+    list-style: none;
+}
+.nav_links a{
+    color: black;
+    text-decoration: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.yellow-btn{
+    background-color: #e6bd43; 
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 0 0 #e6bd43;
+    font-weight: bold;
+}
+
+.yellow-btn :hover{
+    background-color:  black;
+    color:  #e6bd43;
+    transition: 0.7s;
+}
+
+.logo {
+    width: 100px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem ;
+    background-color:#252525 ;
+    color: white;
+}
+.fa-brands{
+    display: flex;
+    padding: 10px;
+   
+}
+.logo-footer{
+    width: 100px;
+}
+
+.video-text{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    top: -150px;
+}
+
+.video-text video{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+.video-text h1{
+    font-size: xx-large;
+    position: relative;
+    top: 350px;
+}
+.video-text p {
+    justify-content: center;
+    position: relative;
+    top: 350px;    
+}
+.video-text button{
+    position: relative;
+    top: 380px;
+}
+.enganging{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 75px;
+   
+}
+.enganging h1{
+    font-size: xx-large;
+    margin-left: 660px;
+    margin-right: 660px;
+}
+.enganging p{
+    margin-left: 590px;
+    margin-right: 590px;
+}
+
+.company{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #e6bd43;
+}
+
+.company img{
+    float: left;
+    margin-right: 50px;
+}
+
+.company h2{
+    font-size: large;
+    display: flex;
+    margin-top: 100px;
+}
+
+.company p{
+    margin-right: 400px;
+}
+
+.more-about-btn{
+    background-color: #e6bd43; 
+    font-weight: bold;
+    border: 3px solid black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.our-services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.our-services h1{
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.our-services article{
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+    padding: 4rem;
+    text-align: center;
+    
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5rem;
+    justify-content: center;
+    background-color: rgb(235, 235, 235);
+}
+.newsletter h1{
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+}
+.searchbar{
+    padding: 16px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: none;
+}

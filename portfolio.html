@@ -15,73 +15,73 @@
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="portfolio" href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <button type="button" class="yellow-btn"><a href="about.html">Contact</a></button>
             </ul>
         </nav>
     </header>
         <main>
-            <section>
+            <section class="port">
                 <article>
                     <h1>Portfolio</h1>
-                    <img src="img/4538123-negative-laptop-pens-books-macbook-iphone-apple-inc..jpg" alt="bakgrunn-port">
+                    <img src="https://i0.pickpik.com/photos/216/142/374/iphone-laptop-macbook-pro-notebook-preview.jpg" alt="bakgrunn-port">
                 </article>
             </section>
-            <Section>
+            <Section class="jobs">
                 <article>
                     <h1>Explore previous jobs</h1>                    
                 </article>
                 <article>
-                    <button onclick="muFunction" id="myBtn">Branding</button>
-                    <button onclick="muFunction" id="myBtn">Design</button>
-                    <button onclick="muFunction" id="myBtn">Devolpment</button>
+                    <button id="myBtn"><a href="#branding">Branding</a></button>
+                    <button id="myBtn"><a href="#design">Design</a></button>
+                    <button id="myBtn"><a href="#devolpment">Devolpment</a></button>
                 </article>
             </Section>
-            <section>
+            <section id="branding">
                 <h1>Branding</h1>
                 <article>
-                    <img src="https://placehold.co/400x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="">
                     <h4>Et harum quidem</h4>
                 </article>
                 <article>
-                    <img src="https://placehold.co/400x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="">
                     <h4>Et harum quidem</h4>
                 </article>
                 <article>
-                    <img src="https://placehold.co/400x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="">
                     <h4>Et harum quidem</h4>
                 </article>
             </section>
             <section>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="">
+                <article class="alene">
+                    <img src="https://placehold.co/1000x800" alt="">
                     <h4>Et harum quidem</h4>
                 </article>
             </section>
-            <section>
+            <section id="design">
                 <h1>Design</h1>
                 <article>
-                    <img src="https://placehold.co/400x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="">
                     <h4>Et harum quidem</h4>
                 </article>   
                 <article>
-                    <img src="https://placehold.co/400x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="">
                     <h4>Et harum quidem</h4>
                 </article>
                 <article>
-                    <img src="https://placehold.co/400x400" alt="">
+                    <img src="https://placehold.co/600x400" alt="">
                     <h4>Et harum quidem</h4>
                 </article>         
             </section>
-            <section>
+            <section id="devolpment">
             <h1>Devolpment</h1>
             <article>
-                <img src="https://placehold.co/400x400" alt="">
+                <img src="https://placehold.co/800x800" alt="">
                 <h4>Et harum quidem</h4>
             </article>    
             <article>
-                <img src="https://placehold.co/400x400" alt="">
+                <img src="https://placehold.co/800x800" alt="">
                 <h4>Et harum quidem</h4>
             </article>    
             </section>
@@ -98,3 +98,9 @@
 </body>
 </html>
 
+<style>
+    .portfolio{
+        font-weight: bold;
+        border-bottom: 2px solid #e6bd43;
+    }
+</style>

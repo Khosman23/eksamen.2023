@@ -25,11 +25,11 @@ header{
     align-items: center;
     padding: 3px 3%;
     color: black;
-    
 }
 
-.nav_links{
-    list-style: none;
+a{
+    text-decoration: none;
+    color: black;
 }
 .nav_links a{
     color: black;
@@ -84,47 +84,30 @@ footer{
     width: 100px;
 }
 
-.video-text{
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    top: -150px;
-}
-
 .video-text video{
     object-fit: cover;
     width: 100%;
-    height: 500px;
+    height: 450px;
 }
-.video-text h1{
+.read-btn h1{
     font-size: xx-large;
-    position: relative;
-    top: 350px;
 }
-.video-text p {
-    justify-content: center;
+.read-btn{
     position: relative;
-    top: 350px;    
-}
-.video-text button{
-    position: relative;
-    top: 380px;
+    text-align: center;
+    bottom: 350px;
 }
 .enganging{
     display: flex;
     justify-content: center;
     text-align: center;
     margin-bottom: 75px;
+    margin-top: -150px;
    
 }
 .enganging h1{
     font-size: xx-large;
-    margin-left: 660px;
-    margin-right: 660px;
-}
-.enganging p{
-    margin-left: 590px;
-    margin-right: 590px;
+    
 }
 
 .company{
@@ -161,25 +144,26 @@ footer{
     
 }
 
-.our-services{
+#our-services{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1rem;
     justify-content: center;
+    margin-top: 85px;
 }
 
-.our-services h1{
+#our-services h1{
     width: 100%;
     text-align: center;
     font-size: xx-large;
 }
 
-.our-services article{
+#our-services article{
     max-width: 300px;
     width: 100%;
     min-width: 200px;
-    padding: 4rem;
+    padding: 2rem;
     text-align: center;
     
 }
@@ -202,4 +186,178 @@ footer{
     margin-top: 8px;
     font-size: 16px;
     border: none;
+}
+
+.port{
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.port img{
+    display: block;
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+}
+
+.port h1{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    text-align: center;
+    font-size: xx-large;
+}
+.jobs{
+    margin: 1rem;
+}
+.jobs h1{
+    font-size: xx-large;
+    border-bottom: 3px solid #e6bd43;
+    padding-bottom: 10px;
+}
+
+.jobs button{
+    background-color: #ffffff; 
+    font-weight: lighter;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#branding{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+#branding article{
+    flex-basis: 33%;
+}
+
+#branding h1{
+    font-size: xx-large;
+    border-bottom: 3px solid #e6bd43;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    flex-basis: 100%;
+}
+#alene{
+    margin: 1rem; 
+}
+#alene article{
+    flex-basis: 33%;
+}
+#alene h1{
+    font-size: xx-large;
+    border-bottom: 3px solid #e6bd43;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    flex-basis: 100%;
+}
+
+#design{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+#design article{
+    flex-basis: 33%;
+}
+
+#design h1{
+    font-size: xx-large;
+    border-bottom: 3px solid #e6bd43;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    flex-basis: 100%;
+}
+
+#devolpment{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+#devolpment article{
+    flex-basis: 33%;
+    padding: 30px;
+}
+
+#devolpment h1{
+    font-size: xx-large;
+    border-bottom: 3px solid #e6bd43;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    flex-basis: 100%;
+}
+
+.about{
+    display: flex;
+    left: 0px;
+    padding-bottom: 5%;
+}
+
+.about img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.about article{
+    position: relative;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    left: 1300px;
+    top: 100px;
+    padding: 20px;
+}
+.text-block-btn{
+    background-color: #e6bd43; 
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 0 0 #e6bd43;
+    font-weight: bold;
+}
+
+.about p{
+    font-weight: lighter;
+}
+
+.clients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #e6bd43;
+}
+.clients h1{
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+}
+.clients img{
+    padding: 30px;
+}
+
+/* contact us skal være her*/
+
+
+.map{
+    margin-bottom: -21.2px;
 }

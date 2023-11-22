@@ -15,7 +15,7 @@
             <a href="index.html"><img class="logo" src="img/logo1.png" alt="logo"></a>
             <nav>
                 <ul class="nav_links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a class="home" href="index.html">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
                     <button type="button" class="yellow-btn"><a href="about.html">Contact</a></button>
@@ -25,21 +25,24 @@
         <main>
             <section>
                 <article class="video-text">
-                    <h1>Compeling headline</h1>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non 
-                    provident</p>
-                    <button type="button" class="yellow-btn">Read more about our services</button>
                     <video autoplay muted loop id="video">
                         <source src="img/mountains.mp4" type="video/mp4">
                     </video>
                 </article>
+                <article class="read-btn">
+                    <h1>Compeling headline</h1>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum <br>
+                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non <br> 
+                    provident</p>
+                    <button type="button" class="yellow-btn"><a href="#our-services">Read more about our services</a></button>
+                </article> 
+                
             </section>
             <section class="enganging">
                 <article>
-                    <h1>Enganging subheading. What can you help your visitors with</h1>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    <h1>Enganging subheading. What can <br> you help your visitors with</h1>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum <br> 
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non <br> provident</p>
                 </article>
             </section>  
             <section class="company">      
@@ -50,11 +53,11 @@
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
                     eu fugiat nulla pariatur. Excepteur </p>
-                    <button type="button" class="more-about-btn">Read more about us</button>
+                    <button type="button" class="more-about-btn"><a href="about.html">Read more about us</button></a>
                     </article>
             </section>
-            <section class="our-services">
-                <h1>Our Services</h1>
+            <section id="our-services">
+                <h1 id="ourservices">Our Services</h1>
                 <article>
                     <i class="fa-solid fa-users fa-2x"></i>
                     <h3>Branding</h3>
@@ -97,3 +100,10 @@
     </div>
 </body>
 </html>
+
+<style>
+    .home{
+        font-weight: bold;
+        border-bottom: 2px solid #e6bd43;
+    }
+</style>

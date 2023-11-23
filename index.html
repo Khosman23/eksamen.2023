@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .home{
+            font-weight: bold;
+            border-bottom: 2px solid #e6bd43;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -18,8 +24,10 @@
                     <li><a class="home" href="index.html">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <button type="button" class="yellow-btn"><a href="about.html">Contact</a></button>
                 </ul>
+                <form action="about.html?#contact">
+                    <button type="submit" class="yellow-btn">Contact</button>
+                </form>
             </nav>
         </header>
         <main>
@@ -28,13 +36,16 @@
                     <video autoplay muted loop id="video">
                         <source src="img/mountains.mp4" type="video/mp4">
                     </video>
+                    <img class="liten-img" src="https://images.pexels.com/photos/34580/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="liten-img">
                 </article>
                 <article class="read-btn">
                     <h1>Compeling headline</h1>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum <br>
                     deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non <br> 
                     provident</p>
-                    <button type="button" class="yellow-btn"><a href="#our-services">Read more about our services</a></button>
+                    <form action="#our-services">
+                        <button type="submit" class="yellow-btn">Read more about our services</button>
+                    </form>
                 </article> 
                 
             </section>
@@ -53,7 +64,9 @@
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
                     eu fugiat nulla pariatur. Excepteur </p>
-                    <button type="button" class="more-about-btn"><a href="about.html">Read more about us</button></a>
+                    <form action="about.html">
+                        <button type="submit" class="more-about-btn">Read more about us</button>
+                    </form>
                     </article>
             </section>
             <section id="our-services">
@@ -89,21 +102,16 @@
             </section>
         </main>
         <footer>
-            <img class="logo-footer" src="img/logo1.png" alt="logo">
+            <a href="index.html"><img class="logo-footer" src="img/logo1.png" alt="logo"></a>
             <p>Companyrights Companyname 2023</p>
-            <article class="fa-brands">
-                <i class="fa-brands fa-square-facebook fa-2x"></i>
-                <i class="fa-brands fa-square-instagram fa-2x"></i> 
-                <i class="fa-brands fa-linkedin fa-2x"></i>
+            <article class="fa-brands">   
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
             </article>    
         </footer>
     </div>
+   
 </body>
 </html>
 
-<style>
-    .home{
-        font-weight: bold;
-        border-bottom: 2px solid #e6bd43;
-    }
-</style>

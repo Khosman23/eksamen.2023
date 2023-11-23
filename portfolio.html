@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .portfolio{
+            font-weight: bold;
+            border-bottom: 2px solid #e6bd43;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -17,25 +23,31 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a class="portfolio" href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
-                <button type="button" class="yellow-btn"><a href="about.html">Contact</a></button>
             </ul>
+            <form action="about.html?#contact">
+                <button type="submit" class="yellow-btn">Contact</button>
+            </form>
         </nav>
     </header>
         <main>
-            <section class="port">
-                <article>
-                    <h1>Portfolio</h1>
+            <section class="port">       
+                <article class="overlay-fog">
                     <img src="https://i0.pickpik.com/photos/216/142/374/iphone-laptop-macbook-pro-notebook-preview.jpg" alt="bakgrunn-port">
                 </article>
+                <h1>Portfolio</h1>
             </section>
             <Section class="jobs">
-                <article>
                     <h1>Explore previous jobs</h1>                    
-                </article>
                 <article>
-                    <button id="myBtn"><a href="#branding">Branding</a></button>
-                    <button id="myBtn"><a href="#design">Design</a></button>
-                    <button id="myBtn"><a href="#devolpment">Devolpment</a></button>
+                    <form action="#branding">
+                        <button>Branding</button>
+                    </form>
+                    <form action="#design">
+                        <button>Design</button>
+                    </form>
+                    <form action="#devolpment">
+                        <button>Development</button>
+                    </form>
                 </article>
             </Section>
             <section id="branding">
@@ -87,20 +99,14 @@
             </section>
         </main>
         <footer>
-            <img class="logo-footer" src="img/logo1.png" alt="logo">
+            <a href="index.html"><img class="logo-footer" src="img/logo1.png" alt="logo"></a>
             <p>Companyrights Companyname 2023</p>
-            <article class="fa-brands">
-                <i class="fa-brands fa-square-facebook fa-2x"></i>
-                <i class="fa-brands fa-square-instagram fa-2x"></i> 
-                <i class="fa-brands fa-linkedin fa-2x"></i>
+            <article class="fa-brands">   
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
             </article>    
         </footer>
 </body>
 </html>
 
-<style>
-    .portfolio{
-        font-weight: bold;
-        border-bottom: 2px solid #e6bd43;
-    }
-</style>

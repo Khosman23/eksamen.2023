@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <style>
-        .about{
+        .About{
             font-weight: bold;
-            border-bottom: 2px solid #e6bd43;
+            border-bottom: 2px solid  #e6bd43;
+            
         }
     </style>    
     <meta charset="UTF-8">
@@ -16,17 +17,16 @@
     <title>About.html</title>
 </head>
 <body>
+    <div id="grid">
     <header>
         <a href="index.html"><img class="logo" src="img/logo1.png" alt="logo"></a>
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a class="about" href="about.html">About</a></li>
+                <li><a class="About" href="about.html">About</a></li>
+                <li><a class="about-nav" href="about.html?#contact">Contact</a></li>
             </ul>
-            <form action="#contact">
-                <button type="submit" class="yellow-btn">Contact</button>
-            </form>
         </nav>
     </header>
         <main>
@@ -46,26 +46,26 @@
                 </article>
             </section>
             <section id="our-services">
-                <h1>Our Services</h1>
+                <h1 id="ourservices">Our Services</h1>
                 <article>
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-users fa-2x"></i>
                     <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <i class="fa-solid fa-cloud-arrow-up fa-2x icon"></i>
                     <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-arrows-left-right"></i>                    
+                    <i class="fa-solid fa-arrows-left-right fa-2x"></i>                    
                     <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-wifi fa-2x"></i>
                     <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
             </section>
             <section class="clients">
@@ -92,7 +92,7 @@
                 
                     <button class="send-msg-btn" type="submit">Send message</button>
                 </article>
-                <article>
+                <article class="c-i">
                 <h2>Contact information</h2>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus <br> qui 
                     blanditiis praesentium voluptatum deleniti atque corrupti <br> quos 
@@ -123,5 +123,6 @@
                 <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
             </article>    
         </footer>
+    </div>
 </body>
 </html>

@@ -16,7 +16,7 @@
     <title>index.html</title>
 </head>
 <body>
-    <div id="grid-forside">
+    <div id="grid">
         <header>
             <a href="index.html"><img class="logo" src="img/logo1.png" alt="logo"></a>
             <nav>
@@ -24,14 +24,13 @@
                     <li><a class="home" href="index.html">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a class="about-nav" href="about.html?#contact">Contact</a></li>
                 </ul>
-                <form action="about.html?#contact">
-                    <button type="submit" class="yellow-btn">Contact</button>
-                </form>
+                
             </nav>
         </header>
         <main>
-            <section>
+            <section class="video-service">
                 <article class="video-text">
                     <video autoplay muted loop id="video">
                         <source src="img/mountains.mp4" type="video/mp4">
@@ -60,9 +59,9 @@
                 <article>
                     <img src="https://placehold.co/400x400" alt="comp-bilde">
                     <h2>About Our Company</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br> 
+                    labore et dolore  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco laboris  nisi ut 
+                    aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit  esse cillum dolore 
                     eu fugiat nulla pariatur. Excepteur </p>
                     <form action="about.html">
                         <button type="submit" class="more-about-btn">Read more about us</button>
@@ -97,7 +96,7 @@
                 <article>
                     <label id="email"><b></b></label>
                     <input class="searchbar" type="text" placeholder="Nora@epost.no" name="email">
-                    <button type="button" class="yellow-btn">Sign me up!</button>
+                    <button type="button" class="yellow-btn-sign">Sign me up!</button>
                 </article>
             </section>
         </main>

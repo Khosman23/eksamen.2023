@@ -1,4 +1,5 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400&family=Lato&display=swap');
+*{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,7 +22,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0 ;
+    padding: 5rem 0 ;
     background-color:#252525 ;
     color: white;
 }
@@ -37,6 +38,7 @@ header{
 header nav {
     display: flex;
     justify-content: space-between;
+    font-size: 15px;
     
 }
 a{
@@ -59,7 +61,13 @@ a{
     text-align: center;
     font-size: 17px;
     cursor: pointer;
+    transition-duration: 0.4s;
    }
+
+.about-nav:hover{
+    background-color: black;
+    color: #e6bd43;
+}
 
 .yellow-btn{
     background-color: #e6bd43; 
@@ -77,11 +85,12 @@ a{
     font-weight: bold;
 }
 
-.yellow-btn :hover{
-    background-color:  black;
-    color:  #e6bd43;
-    transition: 0.7s;
+.yellow-btn:hover{
+    background-color: black;
+    color: #e6bd43;
 }
+
+
 
 .logo {
     width: 100px;
@@ -96,6 +105,12 @@ a{
 .logo-footer{
     width: 100px;
 }
+h1 {
+    font-size: 50px;
+}
+h4 {
+    font-size: 25px;
+}
 .video-text video{
     object-fit: cover;
     width: 100%;
@@ -108,9 +123,7 @@ a{
 .liten-img{
     display: none;
 }
-.read-btn h1{
-    font-size: xx-large;
-}
+
 .read-btn{
     position: relative;
     text-align: center;
@@ -124,10 +137,7 @@ a{
     margin-top: -200px;
    
 }
-.enganging h1{
-    font-size: xx-large;
-    
-}
+
 
 .company{
     display: flex;
@@ -159,15 +169,19 @@ a{
     padding: 16px 32px;
     text-align: center;
     font-size: 16px;
+    transition-duration: 0.4s;
     cursor: pointer;
-    
+}
+.more-about-btn:hover{
+    background: black;
+    color: #e6bd43;
 }
 
 #our-services{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: rem;
     justify-content: center;
     margin-top: px;
     width: 100%;
@@ -176,7 +190,8 @@ a{
 #our-services h1{
     width: 100%;
     text-align: center;
-    font-size: xx-large;
+    font-size: 50px;
+    
 }
 
 #our-services article{
@@ -193,14 +208,14 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5rem;
+    padding: 2rem;
     justify-content: center;
     background-color: rgb(235, 235, 235);
 }
 .newsletter h1{
     width: 100%;
     text-align: center;
-    font-size: xx-large;
+    font-size: 50px;
 }
 .searchbar{
     padding:  16px;
@@ -217,6 +232,11 @@ a{
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+    transition-duration: 0.4s;
+}
+.yellow-btn-sign:hover{
+    background-color: black;
+    color: #e6bd43;
 }
 
 
@@ -233,22 +253,24 @@ a{
     object-fit: cover;
     width: 100vw;
     height: 450px;
+    padding-top: 50px;
     
 }
 
 .port h1{
-    font-size: xx-large;
+    font-size: 80px;
     color: black;
     position: relative;
     text-align: center;
     bottom: 350px;
+    
 }
 .jobs{
     margin: 1rem;
 }
 .jobs h1{
-    font-size: xx-large;
-    border-bottom: 3px solid #e6bd43;
+    font-size: 50px;
+    border-bottom: 4px solid #e6bd43;
     padding-bottom: 10px;
 }
 .jobs article{
@@ -269,9 +291,12 @@ a{
     margin-bottom: 10px;
     width: 160px;
 }
-#branding img{
-    
+
+.jobs button:hover{
+    background: black;
+    color: #e6bd43;
 }
+
 #branding{
     display: flex;
     flex-wrap: wrap;
@@ -282,14 +307,11 @@ a{
     padding: 1px;
     justify-content: center;
     flex-basis: 33%;
-    
-    
-    
 }
 
 #branding h1{
-    font-size: xx-large;
-    border-bottom: 3px solid #e6bd43;
+    font-size: 50px;
+    border-bottom: 4px solid #e6bd43;
     padding-bottom: 10px;
     padding-top: 20px;
     flex-basis: 100%;
@@ -300,7 +322,7 @@ a{
     transition: all 1s ease-in-out;
 }
 .alene img{
-   
+    max-width: 692px;
 }
 .alene{
     margin: 1rem; 
@@ -311,13 +333,6 @@ a{
 .alene :hover{
     transform: scale(1.05);
     transition: all 1s ease-in-out;
-}
-.alene h1{
-    font-size: xx-large;
-    border-bottom: 3px solid #e6bd43;
-    padding-bottom: 10px;
-    padding-top: 20px;
-    flex-basis: 100%;
 }
 
 #design{
@@ -337,8 +352,8 @@ a{
 }
 
 #design h1{
-    font-size: xx-large;
-    border-bottom: 3px solid #e6bd43;
+    font-size: 50px;
+    border-bottom: 4px solid #e6bd43;
     padding-bottom: 10px;
     padding-top: 20px;
     flex-basis: 100%;
@@ -347,10 +362,11 @@ a{
 #devolpment{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 1rem;
 }
 #devolpment article{
-    padding: 5px;
+    padding: 20px;
     justify-content: center;
     flex-basis: 33%;
     
@@ -359,10 +375,12 @@ a{
     transform: scale(1.05);
     transition: all 1s ease-in-out;
 }
-
+#devolpment img{
+    max-width: 692px;
+}
 #devolpment h1{
-    font-size: xx-large;
-    border-bottom: 3px solid #e6bd43;
+    font-size: 50px;
+    border-bottom: 4px solid #e6bd43;
     padding-bottom: 10px;
     padding-top: 20px;
     flex-basis: 100%;
@@ -370,6 +388,7 @@ a{
 
 .about{
     object-fit: cover;
+    
     
 }
 .about img{
@@ -382,11 +401,13 @@ a{
 .about article{
     position: relative;
     align-items: center;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255);
+    opacity: 0.85;
     position: relative;
     float: right;
-    bottom: 30px;
+    bottom: 120px;
     margin-right: 100px;
+    padding: 2rem;
     
 }
 .text-block-btn{
@@ -405,6 +426,11 @@ a{
     font-weight: bold;
 }
 
+.text-block-btn:hover{
+    background-color: black;
+    color: #e6bd43;
+}
+
 .about p{
     font-weight: lighter;
 }
@@ -421,7 +447,7 @@ a{
     margin-bottom: 2rem;
     width: 100%;
     text-align: center;
-    font-size: xx-large;
+    font-size: 50px;
 }
 .clients img{
     padding: 30px;
@@ -442,8 +468,9 @@ a{
     width: 100%;
     justify-content: center;
     text-align: center;
-    font-size: xx-large;
+    font-size: 50px;
 }
+
 .name-sub{
     padding: 16px;
     font-size: 16px;
@@ -465,6 +492,10 @@ a{
     flex-direction: column;
 }
 
+.c-i i{
+    margin-bottom: 20px;
+    
+}
 
 .mail{
     color: blue;
@@ -491,6 +522,29 @@ a{
     box-shadow: 0 0 0 #e6bd43;
     font-weight: bold;
     width: 180px;
+    transition: 0.4s;
+}
+.send-msg-btn:hover{
+    background-color: black;
+    color: #e6bd43;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252525;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.back-to-top span{
+    font-size: 2rem;
 }
 
 @media only screen and (max-width: 600px){

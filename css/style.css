@@ -127,7 +127,7 @@ h4 {
 .read-btn{
     position: relative;
     text-align: center;
-    bottom: 350px;
+    bottom: 450px;
 }
 .enganging{
     display: flex;
@@ -547,11 +547,12 @@ h4 {
     font-size: 2rem;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
+
     #grid{
     display: grid;
     grid-template-columns: 1fr ;
-        
+    
     }
     .liten-img{
     display: flex;
@@ -668,6 +669,5 @@ footer{
     width: 300px;
 }
 
-
-
 }
+
